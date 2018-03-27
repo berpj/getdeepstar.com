@@ -38,6 +38,10 @@
         right: 0;
         bottom: 0;
         opacity: 0.75;
+        z-index: -1;
+      }
+      .content {
+        z-index: 100;
       }
       .text-muted, a {
         color: #eee!important;
@@ -47,23 +51,25 @@
   <body>
     <canvas class="canvas"></canvas>
 
-    <div id="header">
-      <h1>DeepStar</h1>
-      <h2>AI to enhance your creativity.</h2>
-      <br>
-      <br>
-      <p class="text-muted">To be released in mid-2018.<br><a href="mailto:hello@getdeepstar.com">hello@getdeepstar.com</a></p>
+    <div class="content">
+      <div id="header">
+        <h1>DeepStar</h1>
+        <h2>AI to enhance your creativity.</h2>
+        <br>
+        <br>
+        <p class="text-muted">To be released in mid-2018.<br><a href="mailto:hello@getdeepstar.com">hello@getdeepstar.com</a></p>
+      </div>
     </div>
-  </body>
-  <script>
-    $(document).ready(function() {
-      $('.canvas').particles({
-        connectParticles: true,
-        color: '#ffffff',
-        size: 3,
-        maxParticles: 80,
-        speed: 1.8
+    <script>
+      $(document).ready(function() {
+        $('.canvas').particles({
+          connectParticles: true,
+          color: '#ffffff',
+          size: 3,
+          maxParticles: 80,
+          speed: 1.8
+        });
       });
-    });
-  </script>
+    </script>
+  </body>
 </html>
