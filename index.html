@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeepStar - WIP</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.particles.min.js"></script>
+    <style>
+      * {
+        color: white!important;
+
+      }
+      body {
+        margin: 0;
+        background-color: #181818!important;
+      }
+      #header {
+        margin: auto;
+        text-align: center;
+        margin-top: 150px;
+      }
+      h1 {
+        font-size: 4.5em;
+      }
+      h2 {
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1.1em;
+      }
+      canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.75;
+      }
+      .text-muted, a {
+        color: #eee!important;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas class="canvas"></canvas>
+
+    <div id="header">
+      <h1>DeepStar</h1>
+      <h2>AI to enhance your creativity.</h2>
+      <br>
+      <br>
+      <p class="text-muted">To be released in mid-2018.<br><a href="mailto:hello@getdeepstar.com">hello@getdeepstar.com</a></p>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function() {
+      $('.canvas').particles({
+        connectParticles: true,
+        color: '#ffffff',
+        size: 3,
+        maxParticles: 80,
+        speed: 1.8
+      });
+    });
+  </script>
+</html>
